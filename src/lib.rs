@@ -8,6 +8,7 @@ extern crate procedurals;
 
 pub mod device;
 pub mod error;
+pub mod event;
 pub mod kernel;
 pub mod module;
 pub mod uvec;
