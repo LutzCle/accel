@@ -77,6 +77,9 @@ impl<T> Drop for MVec<T> {
     }
 }
 
+unsafe impl<T: Send> Send for MVec<T> {}
+unsafe impl<T: Sync> Sync for MVec<T> {}
+
 #[cfg(test)]
 mod tests {
     use super::*;
