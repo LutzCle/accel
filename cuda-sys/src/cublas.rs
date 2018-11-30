@@ -7,4 +7,7 @@ use library_types::*;
 use cudart::*;
 pub use cudart::cudaDataType;
 
+pub struct __half;
+pub struct __half2;
+
 include!(concat!(env!("OUT_DIR"), "/cublas_bindings.rs"));
